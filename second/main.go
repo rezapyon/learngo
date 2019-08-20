@@ -12,13 +12,20 @@ func main() {
 		"안녕 하세요",
 	)
 
-	var speed int
-	var heat float64
-	var off bool
-	var brand string
+	// var speed int
+	var (
+		speed int
+		heat  float64
+
+		off   bool
+		brand string
+	)
+
+	var speeds, velocity int
 
 	fmt.Println(speed)
 	fmt.Println(heat)
 	fmt.Println(off)
 	fmt.Printf("%q\n", brand)
+	fmt.Println(speeds, velocity)
 }
