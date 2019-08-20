@@ -1,3 +1,4 @@
+// Package main makes this package an executable program
 package main
 
 import "fmt"
