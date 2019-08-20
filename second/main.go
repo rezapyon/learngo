@@ -46,7 +46,8 @@ func main() {
 	fmt.Println(name, isScientist, age, degree)
 
 	// multiple short declaration
-	light, room := true, 4
+	var light bool
+	light, room := true, 4 //assign value to light variable and initialize new variable called room
 
 	fmt.Println(light, room)
 }
