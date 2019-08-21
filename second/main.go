@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"path"
+)
 
 func main() {
 	fmt.Println(-200, -100, 0, 50, 100)       //int
@@ -50,4 +53,14 @@ func main() {
 	light, room := true, 4 //assign value to light variable and initialize new variable called room
 
 	fmt.Println(light, room)
+
+	pathseparator("css/main.css")
+}
+
+func pathseparator(str string) {
+	dir, file := path.Split(str)
+	// _, file := path.Split(str) //if you want to use file variable only
+
+	fmt.Println("Dir: ", dir)
+	fmt.Println("File: ", file)
 }
