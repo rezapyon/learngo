@@ -55,6 +55,7 @@ func main() {
 	fmt.Println(light, room)
 
 	pathseparator("css/main.css")
+	convertionexample()
 }
 
 func pathseparator(str string) {
@@ -63,4 +64,13 @@ func pathseparator(str string) {
 
 	fmt.Println("Dir: ", dir)
 	fmt.Println("File: ", file)
+}
+
+func convertionexample() {
+	speed := 100
+	force := 2.5
+
+	speed = int(float64(speed) * force)
+
+	fmt.Println(speed)
 }
