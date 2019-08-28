@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unicode/utf8"
+)
 
 func main() {
 	fmt.Println("sum :", 3+2)    //sum int
@@ -28,5 +31,13 @@ func main() {
 	fahrenheit := (9*celcius + 160) / 5
 
 	fmt.Printf("%g C is %g F\n", celcius, fahrenheit)
+
+	name := "Reza"
+	fmt.Println(len(name))
+
+	name = "손채영"
+	fmt.Println(len(name)) // false count
+	fmt.Println(
+		utf8.RuneCountInString(name))
 
 }
